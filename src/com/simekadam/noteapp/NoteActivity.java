@@ -21,11 +21,12 @@ public class NoteActivity extends SlidingActivity implements GestureDetector.OnG
     public DataSource database;
     public Cursor cursor;
     public Point size;
-    public EditText notes;
+    public EditText notePanel;
     public int newNoteCursorIndex;
     public GestureDetector gestureDetector;
     public HashMap<Integer, Note> noteshashmap;
     public DataSetObserver observer;
+    public int currentNoteId;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -33,6 +34,35 @@ public class NoteActivity extends SlidingActivity implements GestureDetector.OnG
         inflater.inflate(R.menu.menu, menu);
         return true;
 //        return super.onCreateOptionsMenu(menu);    //To change body of overridden methods use File | Settings | File Templates.
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();    //To change body of overridden methods use File | Settings | File Templates.
+    }
+
+    @Override
+    protected void onResume() {
+        database.open();
+        super.onResume();    //To change body of overridden methods use File | Settings | File Templates.
+    }
+
+    @Override
+    protected void onPause() {
+        database.close();
+        super.onPause();    //To change body of overridden methods use File | Settings | File Templates.
+    }
+
+    @Override
+    protected void onStop() {
+        database.close();
+        super.onStop();    //To change body of overridden methods use File | Settings | File Templates.
+    }
+
+    @Override
+    protected void onDestroy() {
+        database.close();
+        super.onDestroy();    //To change body of overridden methods use File | Settings | File Templates.
     }
 
     /**
@@ -50,25 +80,18 @@ public class NoteActivity extends SlidingActivity implements GestureDetector.OnG
         display.getSize(size);
         int width = size.x;
         int height = size.y;
-        notes = (EditText) findViewById(R.id.note);
-        notes.setOnTouchListener(new View.OnTouchListener() {
+        notePanel = (EditText) findViewById(R.id.note);
+        notePanel.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 return gestureDetector.onTouchEvent(event);
             }
         });
-
+        currentNoteId = -1;
         database.open();
 
-        ArrayList<Note> notesList = database.getAllNotes();
-        noteshashmap = new HashMap<Integer, Note>();
-        for (Note n : notesList)
-        {
-            noteshashmap.put(n.start, n);
-            notes.append(n.text);
-            notes.append("\n\n");
-        }
-        newNoteCursorIndex = notes.getSelectionStart();
+
+        newNoteCursorIndex = notePanel.getSelectionStart();
         cursor = database.getAllNotesCursor();
 
 
@@ -88,10 +111,40 @@ public class NoteActivity extends SlidingActivity implements GestureDetector.OnG
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 TextView start = (TextView) view.findViewById(R.id.startIndex);
                 int index = Integer.parseInt(start.getText().toString());
-                notes.setSelection(index);
+                notePanel.setText((loadNote(index)).text);
+                currentNoteId = index;
                 getSlidingMenu().showContent();
             }
         });
+
+
+        SwipeDismissListViewTouchListener touchListener =
+                new SwipeDismissListViewTouchListener(
+                        sidebar,
+                        new SwipeDismissListViewTouchListener.OnDismissCallback() {
+                            @Override
+                            public void onDismiss(ListView listView, int[] reverseSortedPositions) {
+                                    for(int index : reverseSortedPositions)
+                                    {
+                                        View view = listView.getChildAt(index);
+                                        TextView textView = (TextView) view.findViewById(R.id.startIndex);
+                                        int deletedId = Integer.parseInt(textView.getText().toString());
+                                        database.deleteNote(deletedId);
+                                        ListView sidebar = (ListView) findViewById(R.id.noteslist);
+                                        cursor = database.getAllNotesCursor();
+                                        sidebar.setAdapter(new NoteAdapter(getApplicationContext(), cursor, true));
+                                        sidebar.invalidate();
+                                        if(currentNoteId == deletedId){
+                                            currentNoteId = -1;
+                                            notePanel.setText("");
+                                        }
+                                    }
+                            }
+                        });
+        sidebar.setOnTouchListener(touchListener);
+        // Setting this scroll listener is required to ensure that during ListView scrolling,
+        // we don't look for swipes.
+        sidebar.setOnScrollListener(touchListener.makeScrollListener());
 
         SlidingMenu menu = getSlidingMenu();
         menu.setMode(SlidingMenu.LEFT);
@@ -152,7 +205,6 @@ public class NoteActivity extends SlidingActivity implements GestureDetector.OnG
         Log.d("test", e1.getX()+" "+e2.getX());
         if(Math.abs(e1.getX() - e2.getX()) > size.x*0.8)
         {
-            if(notes.getSelectionStart() < newNoteCursorIndex){return false;}
             saveNote();
         }
         return false;
@@ -161,21 +213,40 @@ public class NoteActivity extends SlidingActivity implements GestureDetector.OnG
 
     public void saveNote()
     {
+        if(currentNoteId == -1){
+
         Log.d(TAG, "saving note");
-        String newNote = notes.getText().subSequence(newNoteCursorIndex, notes.getSelectionStart()).toString();
+        String newNote = notePanel.getText().toString();
         ListView sidebar = (ListView) findViewById(R.id.noteslist);
 
-        database.addNote(newNote, newNoteCursorIndex, notes.getSelectionStart());
-        noteshashmap.put(newNoteCursorIndex, database.getLastNote());
-        notes.append("\n\n");
-        newNoteCursorIndex = notes.getSelectionStart();
-        notes.setSelection(notes.getText().length());
+        database.addNote(newNote, 0, 0);
+//        noteshashmap.put(newNoteCursorIndex, database.getLastNote());
+        newNoteCursorIndex = notePanel.getSelectionStart();
+//        notes.setSelection(notes.getText().length());
         observer.onChanged();
 //            sidebar.invalidate();
         cursor = database.getAllNotesCursor();
         sidebar.setAdapter(new NoteAdapter(getApplicationContext(), cursor, true));
         sidebar.invalidate();
+        notePanel.setText("");
+            currentNoteId = -1;
         Toast toast = Toast.makeText(getApplicationContext(), "Note saved", 5);
         toast.show();
+        }
+        else
+        {
+            Log.d("test", currentNoteId+"");
+            database.changeNote(currentNoteId, notePanel.getText().toString(), 0 , 0);
+            notePanel.setText("");
+            currentNoteId = -1;
+            Toast toast = Toast.makeText(getApplicationContext(), "Note updated", 5);
+            toast.show();
+        }
+    }
+
+    public Note loadNote(int noteID)
+    {
+        return database.getNote(noteID);
+
     }
 }

@@ -43,7 +43,9 @@ public class NoteAdapter extends CursorAdapter {
 
         View view = layoutInflater.inflate(R.layout.note, viewGroup, false);
         bindView(view , context, cursor);
+
         return view;
+
     }
 
     @Override
@@ -60,7 +62,7 @@ public class NoteAdapter extends CursorAdapter {
         titleText = titleText.trim();
          if(titleText.length()>20) titleText = titleText.substring(0, 18)+"..";
         title.setText(titleText);
-        start.setText(String.valueOf(cursor.getInt(cursor.getColumnIndexOrThrow(SQLiteHelper.COLUMN_START))));
+        start.setText(String.valueOf(cursor.getInt(cursor.getColumnIndexOrThrow(SQLiteHelper.COLUMN_ID))));
 
 
     }

@@ -59,6 +59,15 @@ public class DataSource  {
         return  cursorConverter(cursor);
     }
 
+    public Note getNote(int id)
+    {
+        Cursor cursor = database.query(SQLiteHelper.TABLE_NOTES,
+                allColumns, SQLiteHelper.COLUMN_ID + " = " + id, null,
+                null, null, null);
+        cursor.moveToFirst();
+        return  cursorConverter(cursor);
+    }
+
     public Note changeNote(int id, String note, int start, int end)
     {
         ContentValues cv = new ContentValues();
@@ -109,6 +118,11 @@ public class DataSource  {
                 null, null, null);
         cursor.moveToFirst();
         return  cursorConverter(cursor);
+    }
+
+    public void deleteNote(int noteID)
+    {
+         database.delete(SQLiteHelper.TABLE_NOTES, "_id="+noteID, null);
     }
 
 

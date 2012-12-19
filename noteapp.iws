@@ -27,7 +27,19 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4671a11a-3700-482c-831a-f8beba9aa019" name="Default" comment="" />
+    <list default="true" id="4671a11a-3700-482c-831a-f8beba9aa019" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/simekadam/noteapp/SwipeDismissListViewTouchListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/simekadam/noteapp/SwipeDismissTouchListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/noteapp.apk" afterPath="$PROJECT_DIR$/noteapp.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/simekadam/noteapp/DataSource.java" afterPath="$PROJECT_DIR$/src/com/simekadam/noteapp/DataSource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/simekadam/noteapp/NoteActivity.java" afterPath="$PROJECT_DIR$/src/com/simekadam/noteapp/NoteActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/simekadam/noteapp/NoteAdapter.java" afterPath="$PROJECT_DIR$/src/com/simekadam/noteapp/NoteAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/noteapp.ipr" afterPath="$PROJECT_DIR$/noteapp.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/noteapp.iws" afterPath="$PROJECT_DIR$/noteapp.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
+    </list>
+    <list id="41c4d299-57a0-41f1-b535-e9352b111149" name="Rejected commit: Default" comment="" />
     <ignored path="noteapp.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/a.xml" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1354809141345" ignored="false" />
@@ -39,21 +51,18 @@
     <file path="/SQLiteHelper.java" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355867713916" ignored="false" />
     <file path="/Note.java" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355914529434" ignored="false" />
     <file path="/fragment.java" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355873230810" ignored="false" />
-    <file path="/NoteAdapter.java" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355916619933" ignored="false" />
-    <file path="/Dummy.txt" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355910319817" ignored="false" />
+    <file path="/NoteAdapter.java" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355932474912" ignored="false" />
+    <file path="/Dummy.txt" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355931666100" ignored="false" />
     <file path="/note.xml" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355915813575" ignored="false" />
-    <file path="/DataSource.java" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355914633608" ignored="false" />
+    <file path="/DataSource.java" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355932633159" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355912424483" ignored="false" />
     <file path="/main.xml" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355902812440" ignored="false" />
     <file path="/MyEditText.java" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355857556363" ignored="false" />
     <file path="/ExpandAnimation.java" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355855659405" ignored="false" />
     <file path="$USER_HOME$/Downloads/SlidingMenu-master/example/project.properties" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355863699667" ignored="false" />
     <file path="/list.xml" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355915298001" ignored="false" />
-    <file path="/NoteActivity.java" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355916050821" ignored="false" />
+    <file path="/NoteActivity.java" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355933592488" ignored="false" />
     <file path="$USER_HOME$/Downloads/verdigo-drawer-391c2a087aae/project.properties" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355870332362" ignored="false" />
-    <file path="$PROJECT_DIR$/gen/com/simekadam/noteapp/R.java" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355912426324" ignored="false" />
-    <file path="$PROJECT_DIR$/gen/com/simekadam/noteapp/Manifest.java" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355912426324" ignored="false" />
-    <file path="$PROJECT_DIR$/gen/com/simekadam/noteapp/BuildConfig.java" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355912435691" ignored="false" />
     <file path="/menu.xml" changelist="4671a11a-3700-482c-831a-f8beba9aa019" time="1355912193960" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,16 +146,38 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="35" selection-start="1346" selection-end="1356" vertical-scroll-proportion="-17.185184">
+            <state line="35" column="35" selection-start="1346" selection-end="1356" vertical-scroll-proportion="-10.555555">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NoteAdapter.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="NoteAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/simekadam/noteapp/NoteAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="37" selection-start="2223" selection-end="2223" vertical-scroll-proportion="1.269968">
+            <state line="64" column="102" selection-start="2208" selection-end="2208" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SwipeDismissListViewTouchListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/simekadam/noteapp/SwipeDismissListViewTouchListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="0" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#3624#3644#0" expanded="true" />
+                <element signature="e#14314#14598#0" expanded="true" />
+                <element signature="e#14587#14588#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SwipeDismissTouchListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/simekadam/noteapp/SwipeDismissTouchListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -164,7 +195,7 @@
       <file leaf-file-name="Note.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/simekadam/noteapp/Note.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="17" selection-start="0" selection-end="599" vertical-scroll-proportion="0.0">
+            <state line="14" column="39" selection-start="0" selection-end="599" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -173,7 +204,7 @@
       <file leaf-file-name="DataSource.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/simekadam/noteapp/DataSource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="53" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.0">
+            <state line="124" column="70" selection-start="3940" selection-end="3940" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -182,32 +213,22 @@
       <file leaf-file-name="NoteActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/simekadam/noteapp/NoteActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="47" selection-start="3383" selection-end="3383" vertical-scroll-proportion="0.0">
+            <state line="45" column="24" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2982#3407#0" expanded="true" />
-                <element signature="e#3396#3397#0" expanded="true" />
+                <element signature="e#3676#4156#0" expanded="true" />
+                <element signature="e#4145#4146#0" expanded="true" />
+                <element signature="e#4331#5703#0" expanded="true" />
+                <element signature="e#5676#5677#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/menu/menu.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="49" selection-start="192" selection-end="192" vertical-scroll-proportion="-1.6666666">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="72" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
+            <state line="5" column="39" selection-start="260" selection-end="260" vertical-scroll-proportion="0.1768868">
               <folding />
             </state>
           </provider>
@@ -225,33 +246,40 @@
     <option name="KEY_ALIAS" value="adam" />
     <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/simekadam/noteapp/views/EnhancedSurfaceView.java" />
-        <option value="$PROJECT_DIR$/src/com/simekadam/noteapp/ExpandAnimation.java" />
-        <option value="$PROJECT_DIR$/src/com/simekadam/noteapp/views/MyEditText.java" />
         <option value="$PROJECT_DIR$/src/com/simekadam/noteapp/StartActivity.java" />
         <option value="$PROJECT_DIR$/res/drawable/defaultshadow.xml" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/res/layout/menu.xml" />
         <option value="$PROJECT_DIR$/res/menu/menu.xml" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/simekadam/noteapp/Note.java" />
-        <option value="$PROJECT_DIR$/src/com/simekadam/noteapp/DataSource.java" />
         <option value="$PROJECT_DIR$/res/layout/list.xml" />
         <option value="$PROJECT_DIR$/res/layout/note.xml" />
         <option value="$PROJECT_DIR$/src/com/simekadam/noteapp/SQLiteHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/simekadam/noteapp/SwipeToDismissTouchListener.java" />
+        <option value="$PROJECT_DIR$/src/com/simekadam/noteapp/SwipeDismissTouchListener.java" />
+        <option value="$PROJECT_DIR$/src/com/simekadam/noteapp/SwipeDismissListViewTouchListener.java" />
         <option value="$PROJECT_DIR$/src/com/simekadam/noteapp/NoteAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/simekadam/noteapp/DataSource.java" />
         <option value="$PROJECT_DIR$/src/com/simekadam/noteapp/NoteActivity.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="774" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -272,7 +300,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -597,7 +625,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -610,13 +638,13 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="FullScreen" value="false" />
+    <property name="FullScreen" value="true" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="Downloaded.Files.Path" value="$PROJECT_DIR$/lib" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="options.lastSelected" value="preferences.intentionPowerPack" />
+    <property name="options.lastSelected" value="settings.github" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.19463871" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -627,6 +655,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/com/simekadam/noteapp" />
       <recent name="$PROJECT_DIR$/res/drawable-hdpi" />
       <recent name="$PROJECT_DIR$/res/layout" />
       <recent name="$PROJECT_DIR$/res/drawable" />
@@ -839,6 +868,24 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4671a11a-3700-482c-831a-f8beba9aa019" name="Default" comment="" />
@@ -868,29 +915,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="774" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23419774" sideWeight="0.6941896" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27147487" sideWeight="0.6941896" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.49786553" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.49839914" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.49839914" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08103976" sideWeight="0.4765208" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.559633" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17378917" sideWeight="0.4765208" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55840456" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24866596" sideWeight="0.22591007" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39967984" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4019449" sideWeight="0.6941896" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3058104" sideWeight="0.49786553" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2350081" sideWeight="0.6951567" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3048433" sideWeight="0.49786553" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -940,7 +987,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -962,26 +1009,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/SlidingMenu-master/library/res/layout/shadow.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="39" selection-end="226" vertical-scroll-proportion="-0.5555556">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/shadow.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable/defaultshadow.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="29" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0">
@@ -1023,9 +1050,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+    <entry file="file://$USER_HOME$/Android/android-sdk-mac_x86/sources/android-16/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="72" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
+        <state line="60" column="19" selection-start="0" selection-end="76186" vertical-scroll-proportion="-3.6301825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/simekadam/noteapp/DataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="70" selection-start="3940" selection-end="3940" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/simekadam/noteapp/Note.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="39" selection-start="0" selection-end="599" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/simekadam/noteapp/SQLiteHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="20" selection-start="1072" selection-end="1076" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1045,53 +1093,52 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="35" selection-start="1346" selection-end="1356" vertical-scroll-proportion="-17.185184">
+        <state line="35" column="35" selection-start="1346" selection-end="1356" vertical-scroll-proportion="-10.555555">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Android/android-sdk-mac_x86/sources/android-16/java/lang/String.java">
+    <entry file="file://$PROJECT_DIR$/src/com/simekadam/noteapp/SwipeDismissListViewTouchListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="19" selection-start="0" selection-end="76186" vertical-scroll-proportion="-3.6301825">
+        <state line="22" column="0" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#3624#3644#0" expanded="true" />
+            <element signature="e#14314#14598#0" expanded="true" />
+            <element signature="e#14587#14588#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/simekadam/noteapp/NoteAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="102" selection-start="2208" selection-end="2208" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/simekadam/noteapp/SwipeDismissTouchListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/simekadam/noteapp/NoteActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="47" selection-start="3383" selection-end="3383" vertical-scroll-proportion="0.0">
+        <state line="45" column="24" selection-start="1471" selection-end="1471" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2982#3407#0" expanded="true" />
-            <element signature="e#3396#3397#0" expanded="true" />
+            <element signature="e#3676#4156#0" expanded="true" />
+            <element signature="e#4145#4146#0" expanded="true" />
+            <element signature="e#4331#5703#0" expanded="true" />
+            <element signature="e#5676#5677#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/simekadam/noteapp/DataSource.java">
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="53" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/simekadam/noteapp/Note.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="17" selection-start="0" selection-end="599" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/simekadam/noteapp/SQLiteHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="20" selection-start="1072" selection-end="1076" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/simekadam/noteapp/NoteAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="37" selection-start="2223" selection-end="2223" vertical-scroll-proportion="1.269968">
+        <state line="5" column="39" selection-start="260" selection-end="260" vertical-scroll-proportion="0.1768868">
           <folding />
         </state>
       </provider>
