@@ -87,6 +87,15 @@ public class NoteActivity extends SlidingActivity implements GestureDetector.OnG
                 return gestureDetector.onTouchEvent(event);
             }
         });
+
+        notePanel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView view = (TextView) v;
+                if(!view.isEnabled())    toggleEditor();
+            }
+        });
+
         currentNoteId = -1;
         database.open();
 
@@ -195,6 +204,9 @@ public class NoteActivity extends SlidingActivity implements GestureDetector.OnG
             case R.id.menu_addnote:
                 saveNote();
                 return true;
+            case R.id.menu_edit:
+                toggleEditor();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -213,11 +225,15 @@ public class NoteActivity extends SlidingActivity implements GestureDetector.OnG
 
     public void saveNote()
     {
+        if(notePanel.getText().length()==0){}
+        else{
+
+
         if(currentNoteId == -1){
 
         Log.d(TAG, "saving note");
         String newNote = notePanel.getText().toString();
-        ListView sidebar = (ListView) findViewById(R.id.noteslist);
+
 
         database.addNote(newNote, 0, 0);
 //        noteshashmap.put(newNoteCursorIndex, database.getLastNote());
@@ -225,9 +241,7 @@ public class NoteActivity extends SlidingActivity implements GestureDetector.OnG
 //        notes.setSelection(notes.getText().length());
         observer.onChanged();
 //            sidebar.invalidate();
-        cursor = database.getAllNotesCursor();
-        sidebar.setAdapter(new NoteAdapter(getApplicationContext(), cursor, true));
-        sidebar.invalidate();
+
         notePanel.setText("");
             currentNoteId = -1;
         Toast toast = Toast.makeText(getApplicationContext(), "Note saved", 5);
@@ -242,11 +256,29 @@ public class NoteActivity extends SlidingActivity implements GestureDetector.OnG
             Toast toast = Toast.makeText(getApplicationContext(), "Note updated", 5);
             toast.show();
         }
+        ListView sidebar = (ListView) findViewById(R.id.noteslist);
+        cursor = database.getAllNotesCursor();
+        sidebar.setAdapter(new NoteAdapter(getApplicationContext(), cursor, true));
+        sidebar.invalidate();
+        }
     }
 
     public Note loadNote(int noteID)
     {
         return database.getNote(noteID);
+
+    }
+
+
+    public void toggleEditor()
+    {
+        if(notePanel.isEnabled()){
+            notePanel.setEnabled(false);
+        }
+        else
+        {
+            notePanel.setEnabled(true);
+        }
 
     }
 }

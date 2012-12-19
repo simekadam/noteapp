@@ -8,6 +8,10 @@
         >
 
     <EditText
+        android:textColor="#111111"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:background="@drawable/linedbg"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/note"

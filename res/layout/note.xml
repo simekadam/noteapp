@@ -13,6 +13,7 @@
         android:maxLines="10"
         android:gravity="left|top"
         android:paddingTop="5dip"
+        android:textColor="#111111"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium.Inverse"
         android:layout_weight="1"/>
     <TextView
