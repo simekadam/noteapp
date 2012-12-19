@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$USER_HOME$/Downloads/SlidingMenu-master/library/libs/android-support-v13.jar!/" />
+    <src_description expected_position="2">
+      <src_folder value="file://$USER_HOME$/Downloads/SlidingMenu-master/library/src" expected_position="2" />
+      <src_folder value="file://$USER_HOME$/Downloads/SlidingMenu-master/library/gen" expected_position="3" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <output url="file://$USER_HOME$/Downloads/SlidingMenu-master/library/bin/classes" />
+    <exclude-output />
+    <content url="file://$USER_HOME$/Downloads/SlidingMenu-master/library">
+      <sourceFolder url="file://$USER_HOME$/Downloads/SlidingMenu-master/library/src" isTestSource="false" />
+      <sourceFolder url="file://$USER_HOME$/Downloads/SlidingMenu-master/library/gen" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="Android 4.1 Google APIs" jdkType="Android SDK" />
+    <orderEntry type="module-library">
+      <library name="android-support-v13.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/SlidingMenu-master/library/libs/android-support-v13.jar!/" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="jar://$USER_HOME$/Downloads/SlidingMenu-master/library/libs/android-support-v13-docs.jar!/" />
+        </JAVADOC>
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
+

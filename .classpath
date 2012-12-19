@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/Android 4.1 Google APIs"/>
+	<classpathentry exported="true" kind="var" path="USER_HOME/Android/android-sdk-mac_x86/extras/android/compatibility/v4/android-support-v4.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/SlidingMenu"/>
+	<classpathentry kind="output" path="out/production/noteapp"/>
+</classpath>
