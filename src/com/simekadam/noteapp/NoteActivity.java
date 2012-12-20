@@ -15,7 +15,7 @@ import com.slidingmenu.lib.app.SlidingActivity;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class NoteActivity extends SlidingActivity implements GestureDetector.OnGestureListener {
+public class NoteActivity extends SlidingActivity implements GestureDetector.OnGestureListener, SyncCompleteListener {
 
     public static final String TAG = NoteActivity.class.getSimpleName();
     public DataSource database;
@@ -199,7 +199,7 @@ public class NoteActivity extends SlidingActivity implements GestureDetector.OnG
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_sync:
-//                newGame();
+                sync();
                 return true;
             case R.id.menu_addnote:
                 saveNote();
@@ -211,6 +211,13 @@ public class NoteActivity extends SlidingActivity implements GestureDetector.OnG
                 return super.onOptionsItemSelected(item);
         }
     }
+
+    public void sync()
+    {
+        Connection connection = new Connection(getApplicationContext(), this);
+        connection.downloadAllNotes();
+    }
+
 
     @Override
     public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
@@ -280,5 +287,13 @@ public class NoteActivity extends SlidingActivity implements GestureDetector.OnG
             notePanel.setEnabled(true);
         }
 
+    }
+
+    @Override
+    public void onSyncComplete() {
+        ListView sidebar = (ListView) findViewById(R.id.noteslist);
+        cursor = database.getAllNotesCursor();
+        sidebar.setAdapter(new NoteAdapter(getApplicationContext(), cursor, true));
+        sidebar.invalidate();
     }
 }
